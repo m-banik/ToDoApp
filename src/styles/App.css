@@ -5,27 +5,46 @@
 }
 .app{
   display: flex;
-  min-height: 100vh;
+  margin: 1vh 0;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+.app .form, section{
+  width: 80%;
+  margin: .1vh 0;
+  border: .4vh solid #666;
+  border-radius: 5%;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: silver;
 }
 .app .form{
-  width: 50%;
+  flex-basis: 25vh;
+  background-color: rgb(148, 147, 147);
+  border-color: darkslategrey;
+}
+section.activeTasks{
+  min-height: calc(100vh/3);
 }
 .form form{
-  flex-basis: 20%;
   width: 50%;
-  margin: 0 auto;
-  padding: 1vh 1vw;
+  margin: 2vh auto;
 }
 .form input{
   margin: 1vh .5vw;
+  padding: .3vh;
+}
+.form input#taskContent{
+  width: 40%;
+  line-height: 2vh;
 }
 .form input#priority{
-  margin: 0 .1vw 0 0;
+  width: 1.8vh;
+  height: 1.8vh;
 }
-.form button{
+button{
   padding: .8vh 1vw;
   font-weight: 700;
   border: .1vw solid #000;
@@ -34,19 +53,15 @@
   cursor: pointer;
   transition: .2s linear;
 }
-.form button:hover{
+button:hover{
   color: #fff;
   background-color: #000;
 }
 .form h1{
-  color: rgb(236, 20, 20);
-  font-size: 1.5vw;
+  color: rgb(172, 9, 9);
+  font-size: 1.4vw;
   text-align: center;
-}
-section{
-  width: 80%;
-  border-top: .4vh solid #666;
-  text-align: center;
+  text-decoration: underline;
 }
 section h1{
   padding: 2vh 0;
@@ -61,16 +76,9 @@ section p .important{
 section button{
   margin: 0 .5vw;
   padding: .3vh .4vw;
-  border: .1vw solid #000;
-  font-weight: 700;
-  background-color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: .2s linear;
 }
-section button:hover{
-  color: #fff;
-  background-color: #000;
+section.doneTasks{
+  flex-basis: calc(100vh/3);
 }
 section.doneTasks h2{
   padding: 0 0 2vh;
