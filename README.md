@@ -6,6 +6,7 @@ This is simple React application that provides possibility of adding, deleting a
 ## Reasources
 Added font(s) used in the project are the following:
  - [Roboto](https://fonts.google.com/specimen/Roboto), 400, 700, latin extended, [Apache License, Version 2.0(click to read the license)](http://www.apache.org/licenses/LICENSE-2.0).
+
  All taken from [Google Fonts](https://fonts.google.com/).
 
 ## Genesis
